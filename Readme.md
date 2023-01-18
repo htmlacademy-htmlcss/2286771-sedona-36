@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Инна Ладыженская](https://up.htmlacademy.ru/htmlcss/36/user/2286771).
-* Наставник: `Павел Нюкало`.
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
