@@ -34,7 +34,6 @@ body {
   line-height: 24px;
   color: inherit;
   font-weight: 700;
-  text-transform: capitalize;
   text-decoration: none;
   background-color: #FFFFFF;
   text-align: center;
@@ -45,8 +44,92 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  background-color: #756157;
+  font-weight: 700;
 }
 
-.main-index {
+.hero {
+  background-image: url("../images/background-index.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 485px;
+  background-color: #82B3D3;
+  color: #000000;
+  min-height: 485px;
+}
 
+/*Intro*/
+.intro {
+  text-align: center;
+}
+
+.intro-slogan {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.intro-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+/*List*/
+.advantages-list {
+  text-align: center;
+}
+
+/*Title*/
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 700px;
+}
+
+.advantages-item-white {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  background-size: 100% auto;
+  font-weight: 400px;
+}
+
+/*Tips*/
+.tips-list {
+  text-align: center;
+}
+
+.tips-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 700px;
+}
+
+/*Search*/
+.search {
+  text-align: center;
+}
+
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.serach-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.search-button {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #756157;
+  text-decoration: none;
+  font-size: 20px;
+line-height: 36px;
 }
