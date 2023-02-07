@@ -53,7 +53,7 @@ body {
   margin:  0;
   padding: 0;
   max-width: 400px;
-  margin-left: auto;
+  margin-left: 0 auto;
 }
 
 .navigation-link {
@@ -79,6 +79,11 @@ body {
   flex-grow: 1;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+}
 .hero {
   background-image: url("../images/background-index.jpg");
   background-repeat: no-repeat;
@@ -110,6 +115,8 @@ body {
 /*List*/
 .advantages-list {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 /*Title*/
