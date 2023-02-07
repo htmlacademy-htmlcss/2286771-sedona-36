@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -27,6 +35,25 @@ body {
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 687px;
+}
+
+.navigation-user {
+  margin:  0;
+  padding: 0;
+  max-width: 400px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -46,6 +73,10 @@ body {
   color: #FFFFFF;
   background-color: #756157;
   font-weight: 700;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .hero {
