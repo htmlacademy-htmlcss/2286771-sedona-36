@@ -153,11 +153,11 @@ body {
 
 /*Tips*/
 .tips-list {
-  text-align: center;
   width: 1200px;
   display: flex;
   justify-content: space-between;
   margin: 0;
+  text-align: center;
 }
 
 .tips-title {
@@ -183,7 +183,7 @@ body {
   line-height: 36px;
 }
 
-.serach-text {
+.search-text {
   font-size: 22px;
   line-height: 26px;
 }
@@ -307,6 +307,12 @@ body {
 }
 
 /*Footer*/
+
+.page-footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .telephone {
   font-size: 40px;
   line-height: 40px;
@@ -314,4 +320,12 @@ body {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+
 }
