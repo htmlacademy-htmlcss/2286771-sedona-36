@@ -46,14 +46,19 @@ body {
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 687px;
+  width: 449px;
 }
 
 .navigation-user {
   margin: 0;
   padding: 0;
-  max-width: 400px;
+  max-width: 300px;
   margin-left: 0 auto;
+}
+
+.navigation-logo {
+  width: 138px;
+  margin-right: 30px;
 }
 
 .navigation-link {
@@ -74,6 +79,7 @@ body {
   background-color: #756157;
   font-weight: 700;
 }
+
 
 .main-container {
   flex-grow: 1;
@@ -207,6 +213,7 @@ body {
   color: #FFFFFF;
 }
 
+
 .filter-group-title {
   font-weight: 700;
   font-size: 20px;
@@ -225,6 +232,18 @@ body {
   text-transform: uppercase;
 }
 
+.hotel-card-list {
+display: flex;
+width: 1060px;
+flex-wrap: wrap;
+}
+
+.hotel-card-item {
+width: 340px;
+justify-content: space-between;
+
+}
+
 .hotel-card-link {
   font-weight: 700;
   font-size: 24px;
@@ -233,7 +252,19 @@ body {
   text-decoration: none;
 }
 
+.filter-form {
+  display: flex;
+}
+
+.filter-group-container {
+  width: 371px;
+}
+
 /*Buttons*/
+
+.filter-button-container {
+  width: 549px;
+}
 .button {
   text-transform: uppercase;
   font-weight: 700;
