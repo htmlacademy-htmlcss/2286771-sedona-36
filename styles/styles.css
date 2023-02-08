@@ -213,7 +213,6 @@ body {
   color: #FFFFFF;
 }
 
-
 .filter-group-title {
   font-weight: 700;
   font-size: 20px;
@@ -257,14 +256,18 @@ justify-content: space-between;
 }
 
 .filter-group-container {
-  width: 371px;
+  display: flex;
+  margin-right: 167px;
 }
+
+.filter-group {
+  width: 151px;
+  justify-content: space-between;
+}
+
 
 /*Buttons*/
 
-.filter-button-container {
-  width: 549px;
-}
 .button {
   text-transform: uppercase;
   font-weight: 700;
