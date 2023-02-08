@@ -122,6 +122,8 @@ body {
 .advantages-list {
   text-align: center;
   width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item-white {
@@ -232,14 +234,14 @@ body {
 }
 
 .hotel-card-list {
-display: flex;
-width: 1060px;
-flex-wrap: wrap;
+  display: flex;
+  width: 1060px;
+  flex-wrap: wrap;
 }
 
 .hotel-card-item {
-width: 340px;
-justify-content: space-between;
+  width: 340px;
+  justify-content: space-between;
 
 }
 
@@ -250,21 +252,6 @@ justify-content: space-between;
   color: #000000;
   text-decoration: none;
 }
-
-.filter-form {
-  display: flex;
-}
-
-.filter-group-container {
-  display: flex;
-  margin-right: 167px;
-}
-
-.filter-group {
-  width: 151px;
-  justify-content: space-between;
-}
-
 
 /*Buttons*/
 
