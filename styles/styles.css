@@ -149,14 +149,10 @@ body {
   width: 800px;
 }
 
-.advantages-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .advantages-item {
   width: 400px;
   padding: 85px 112px;
+
 }
 
 /*Tips*/
