@@ -1,6 +1,6 @@
 @font-face {
   font-family: "PT Sans";
-  forn-style: normal;
+  font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
@@ -124,6 +124,21 @@ body {
   width: 1200px;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-list-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 230px;
+  height: 160px;
+  text-align: center;
+  margin: 0;
+  padding: 102px 85px;
 }
 
 .advantages-item-white {
@@ -133,14 +148,17 @@ body {
   font-weight: 400px;
   display: flex;
   min-height: 385px;
+  width: 1200px;
 }
 
 .advantages-item-white-container {
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-top: 102px;
-  padding-bottom: 102px;
+  padding: 85px 102px;
   margin: 0;
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .advantages-image {
@@ -149,19 +167,27 @@ body {
   width: 800px;
 }
 
-.advantages-item {
-  width: 400px;
-  padding: 85px 112px;
+.advantages-image-second {
+  order: -1;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+}
 
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-weight: 700px;
 }
 
 /*Tips*/
 .tips-list {
   width: 1200px;
   display: flex;
-  justify-content: space-between;
   margin: 0;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .tips-title {
@@ -172,8 +198,10 @@ body {
 }
 
 .tips-item {
-  width: 400px;
-  padding: 80px 85px;
+  width: 230px;
+  height: 223px;
+  padding: 81px 85px;
+
 }
 
 /*Search*/
