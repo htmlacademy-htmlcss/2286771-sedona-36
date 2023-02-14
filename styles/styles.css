@@ -490,6 +490,8 @@ body {
 .subscription-text {
   font-size: 22px;
   line-height: 26px;
+  padding-left: 104px;
+  padding-right: 104px;
 }
 
 .subscription-form {
@@ -515,6 +517,8 @@ body {
 
 .footer-subscription {
   color: #000000;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 /*Footer*/
@@ -548,4 +552,12 @@ body {
   width: 47px;
   height: 40px;
   margin-top: 5px;
+}
+
+input {
+  width: 87px;
+  height: 24px;
+  padding: 14px 345px 14px 20px;
+  background: #F2F2F2;
+  border-radius: 4px 0px 0px 4px;
 }
