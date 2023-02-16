@@ -355,10 +355,8 @@ body {
   gap: 10px;
 }
 
-
 .button-show-link.button-show-current {
   border: 2px solid #000000;
-  border-radius: 4px;
 }
 
 .hotel-card-list {
