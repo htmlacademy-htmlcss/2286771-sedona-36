@@ -335,7 +335,6 @@ body {
 }
 
 .button-show-list {
-  max-width: 160px;
   list-style-type: none;
   display: flex;
   margin: 0;
@@ -345,21 +344,21 @@ body {
 }
 
 .button-show-link {
-  max-width: 48px;
-  max-height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   display: block;
-}
-
-.button-show {
-  width: 48px;
-  height: 48px;
   border: 2px solid #E5E5E5;
   box-sizing: border-box;
   border-radius: 4px;
+  align-items: center;
+  padding: 14px 12px;
+  gap: 10px;
 }
 
-.button-show.button-show-current {
+
+.button-show-link.button-show-current {
   border: 2px solid #000000;
+  border-radius: 4px;
 }
 
 .hotel-card-list {
@@ -494,7 +493,6 @@ body {
   padding-bottom: 54px;
   width: 475px;
   margin: 0 auto;
-
 }
 
 .subscription-form {
@@ -510,8 +508,8 @@ body {
   background-repeat: no-repeat;
   padding-top: 96px;
   padding-bottom: 104px;
+  text-align: center;
 }
-
 
 /*Footer*/
 
