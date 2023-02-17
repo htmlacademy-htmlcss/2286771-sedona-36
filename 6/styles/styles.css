@@ -109,7 +109,7 @@ body {
   min-height: 20px;
 }
 
-.intro-logo {
+.hero-logo {
   padding: 51px 371px 82px;
 }
 
@@ -238,9 +238,6 @@ body {
   text-align: center;
   padding-top: 96px;
   padding-bottom: 96px;
-}
-
-.search-content {
   margin: 0 auto;
   width: 592px;
 }
@@ -249,12 +246,15 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  margin-top: 0;
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .search-text {
   font-size: 22px;
   line-height: 26px;
+  padding-bottom: 54px;
+  margin: 0;
 }
 
 /*Filter and Catalog*/
@@ -335,36 +335,28 @@ body {
 }
 
 .button-show-list {
-  min-width: 160px;
   list-style-type: none;
   display: flex;
   margin: 0;
   flex-wrap: wrap;
+  align-items: start;
+  gap: 8px;
 }
 
-.button-show-cards {
-  width: 16px;
-  height: 14px;
-  padding: 17px 16px;
-  margin-right: 8px;
+.button-show-link {
+  min-width: 48px;
+  min-height: 48px;
+  display: block;
+  border: 2px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-items: center;
+  padding: 14px 12px;
+  gap: 10px;
+}
+
+.button-show-link.button-show-current {
   border: 2px solid #000000;
-  margin-bottom: 5px;
-}
-
-.button-show-gallery {
-  width: 16px;
-  height: 14px;
-  padding: 17px 16px;
-  margin-right: 8px;
-  border: 2px solid #E5E5E5;
-}
-
-.button-show-rows {
-  width: 16px;
-  height: 14px;
-  padding: 17px 16px;
-  margin-right: 8px;
-  border: 2px solid #E5E5E5;
 }
 
 .hotel-card-list {
@@ -397,6 +389,7 @@ body {
   padding-left: 70px;
   padding-bottom: 60px;
   padding-top: 40px;
+  gap: 8px;
 }
 
 .pagination-link {
@@ -415,13 +408,8 @@ body {
   color: #FFFFFF;
 }
 
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .pagination-link.pagination-current {
   background: #F2F2F2;
-  border-radius: 4px;
   color: #000000;
 }
 
@@ -479,24 +467,35 @@ body {
 }
 
 /*Subscription*/
+.footer-subscription {
+  color: #000000;
+  padding-top: 96px;
+  padding-bottom: 104px;
+  text-align: center;
+  width: 684px;
+  margin: 0 auto;
+}
+
 .subscription-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .subscription-text {
   font-size: 22px;
   line-height: 26px;
-  padding-left: 104px;
-  padding-right: 104px;
+  padding-bottom: 54px;
+  width: 475px;
+  margin: 0 auto;
 }
 
 .subscription-form {
   display: flex;
-  text-align: center;
+  justify-content: center;
 }
 
 .main-footer-subscription {
@@ -507,18 +506,7 @@ body {
   background-repeat: no-repeat;
   padding-top: 96px;
   padding-bottom: 104px;
-}
-
-.subscribtion-content {
-  width: 684px;
-  margin: 0 auto;
   text-align: center;
-}
-
-.footer-subscription {
-  color: #000000;
-  padding-top: 96px;
-  padding-bottom: 104px;
 }
 
 /*Footer*/
@@ -554,7 +542,7 @@ body {
   margin-top: 5px;
 }
 
-input {
+.e-mail {
   width: 87px;
   height: 24px;
   padding: 14px 345px 14px 20px;
