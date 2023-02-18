@@ -360,12 +360,15 @@ body {
 }
 
 .hotel-card-list {
-  display: flex;
-  width: 1060px;
-  flex-wrap: wrap;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 345px);
+  gap: 20px;
+  margin-bottom: 80px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .hotel-card-item {
@@ -385,10 +388,8 @@ body {
   list-style-type: none;
   display: flex;
   margin: 0;
-  padding: 0;
   padding-left: 70px;
   padding-bottom: 60px;
-  padding-top: 40px;
   gap: 8px;
 }
 
