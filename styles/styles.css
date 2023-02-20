@@ -374,7 +374,6 @@ body {
 .hotel-card-item {
   display: grid;
   grid-template-columns: 143px 143px;
-  grid-template-rows: 212px 28px 21px 36px 37px;
   row-gap: 16px;
   column-gap: 20px;
   padding: 20px;
