@@ -373,13 +373,13 @@ body {
 
 .hotel-card-item {
   display: grid;
-  grid-template-columns: 143px 143px;
+  grid-template-columns: 140px 140px;
   grid-template-rows: 212px 1fr;
   row-gap: 16px;
   column-gap: 20px;
   padding: 20px;
   margin: 0;
-  border: 1px solid #E6E6E6;
+  outline: 1px solid #E6E6E6;
   border-radius: 4px;
 }
 
@@ -492,6 +492,7 @@ body {
   border-radius: 4px;
   border: none;
   grid-column: 2/-1;
+  padding: 9px 22px;
 
 }
 
