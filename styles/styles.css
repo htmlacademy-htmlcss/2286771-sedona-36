@@ -360,17 +360,27 @@ body {
 }
 
 .hotel-card-list {
-  display: flex;
-  width: 1060px;
-  flex-wrap: wrap;
-  padding-left: 0;
-  margin: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  margin-bottom: 80px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 0;
+  padding: 0;
 }
 
 .hotel-card-item {
-  width: 340px;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 212px 1fr;
+  row-gap: 16px;
+  column-gap: 20px;
+  padding: 20px;
+  margin: 0;
+  outline: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .hotel-card-link {
@@ -379,16 +389,29 @@ body {
   line-height: 28px;
   color: #000000;
   text-decoration: none;
+  grid-column: 1/-1;
+}
+
+.hotel {
+  margin: 0;
+  grid-column: 1/2;
+}
+
+.hotel-card-title {
+  margin: 0;
+}
+
+.hotel-price {
+  margin: 0;
+  text-align: right;
 }
 
 .pagination {
   list-style-type: none;
   display: flex;
   margin: 0;
-  padding: 0;
   padding-left: 70px;
   padding-bottom: 60px;
-  padding-top: 40px;
   gap: 8px;
 }
 
@@ -428,6 +451,7 @@ body {
   text-align: center;
   text-decoration: none;
   color: #FFFFFF;
+  border-radius: 4px;
 }
 
 .search-button {
@@ -444,12 +468,19 @@ body {
   border: none;
 }
 
-.hotel-class-details-button {
+.hotel-card-details-button {
   background: #756157;
+  padding: 8px 22px;
 }
 
-.hotel-class-favourite-button {
+.hotel-card-favourite-button {
   background-color: #82B3D3;
+  padding: 8px 10px;
+}
+
+.hotel-card-green-favourite-button {
+  background-color: #7DB54F;
+  padding: 8px 10px;
 }
 
 .ranking-button {
@@ -457,6 +488,12 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  grid-column: 2/-1;
+  padding: 9px 22px;
+  margin: 0;
 }
 
 .subscribe-button {
@@ -547,5 +584,5 @@ body {
   height: 24px;
   padding: 14px 345px 14px 20px;
   background: #F2F2F2;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
