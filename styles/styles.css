@@ -107,21 +107,17 @@ body {
 .navigation-user .navigation-link {
   min-width: 20px;
   min-height: 20px;
+  position: relative;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link {
-  background-image: url("../images/icons/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
-
-.navigation-user .navigation-item:nth-child(2) .navigation-link {
-  background-image: url("../images/icons/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
 
 .navigation-link.button {
   text-transform: uppercase;
@@ -132,6 +128,7 @@ body {
   font-weight: 700;
   padding: 8px 34px;
   margin-top: 14px;
+  margin-left: 20px;
 }
 
 .hero {
@@ -613,6 +610,19 @@ body {
   width: 47px;
   height: 40px;
   margin-top: 5px;
+}
+
+.footer-social-link {
+width: 24px;
+height: 14px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 24px 14px;
+display: block;
+}
+
+.footer-social-vk {
+  background-image: url("../images/icons/social-vk.svg")
 }
 
 .e-mail {
