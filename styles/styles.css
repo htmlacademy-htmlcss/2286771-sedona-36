@@ -190,6 +190,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 112px 85px;
+  position: relative;
 }
 
 .advantages-item-white {
@@ -216,20 +217,25 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   margin: 0 15px 62px;
-  position: relative;
 }
 
-.advantages-title:after {
+.advantages-item:after {
   position: absolute;
   content: "";
   width: 60px;
   height: 2px;
   background: rgba(0, 0, 0, 0.3);
-  top: 86px;
-  left: 85px;
+  top: 199px;
+  left: 170px;
 }
 
+.advantages-item:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
 
+.advantages-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
 .advantages-description {
   margin: 0;
 }
@@ -423,6 +429,7 @@ body {
   background-position: left;
   margin: 0;
   padding-right: 6px;
+  padding-top: 10px;
 }
 
 .star-4 {
