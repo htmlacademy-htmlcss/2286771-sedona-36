@@ -386,11 +386,21 @@ body {
   border-radius: 4px;
   align-items: center;
   padding: 14px 12px;
-  gap: 10px;
+  gap: 8px;
+  position: relative;
 }
 
 .button-show-link.button-show-current {
   border: 2px solid #000000;
+}
+
+.button-show-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .hotel-card-list {
@@ -614,13 +624,13 @@ body {
 }
 
 .footer-social-link {
-width: 24px;
-height: 14px;
-background-repeat: no-repeat;
-background-position: center;
-background-size: 24px 14px;
-display: block;
-padding: 13px 12px;
+  width: 24px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 14px;
+  display: block;
+  padding: 13px 12px;
 }
 
 .footer-social-vk {
@@ -636,10 +646,10 @@ padding: 13px 12px;
 }
 
 .htmlacademy-link {
-width: 115px;
-height: 33px;
-padding-top: 9px;
-padding-bottom: 9px;
+  width: 115px;
+  height: 33px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .e-mail {
