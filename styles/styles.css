@@ -422,7 +422,7 @@ body {
   background-repeat: space;
   background-position: left;
   margin: 0;
-  padding: 6px;
+  padding-right: 6px;
 }
 
 .star-4 {
