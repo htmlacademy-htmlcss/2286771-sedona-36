@@ -403,6 +403,32 @@ body {
   margin: auto;
 }
 
+.stars {
+  background-image: url("../images/icons/star-1.svg");
+  width: 140px;
+  height: 37px;
+  background-repeat: repeat-x;
+  background-position: left;
+  margin: 0;
+  font-size: 18px;
+}
+
+.star-4 {
+  width: 4em;
+}
+
+.star-3 {
+  width: 3em;
+}
+
+.star-2 {
+  width: 2em;
+}
+
+.star-5 {
+  width: 5em;
+}
+
 .hotel-card-list {
   list-style-type: none;
   display: grid;
