@@ -544,6 +544,18 @@ body {
   padding: 8px 22px;
 }
 
+.hotel-card-details-button:hover {
+background-color: #615048;
+}
+
+.hotel-card-details-button:active {
+  background-color: #756157;
+}
+
+.hotel-card-details-button:visited {
+  background-color: #E5E5E5;
+}
+
 .hotel-card-favourite-button {
   background-color: #82B3D3;
   padding: 8px 10px;
