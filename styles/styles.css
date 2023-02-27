@@ -545,14 +545,14 @@ body {
 }
 
 .hotel-card-details-button:hover {
-background-color: #615048;
+  background-color: #615048;
 }
 
 .hotel-card-details-button:active {
   background-color: #756157;
 }
 
-.hotel-card-details-button:visited {
+.hotel-card-details-button:disabled {
   background-color: #E5E5E5;
 }
 
@@ -561,9 +561,33 @@ background-color: #615048;
   padding: 8px 10px;
 }
 
+.hotel-card-favourite-button:hover {
+  background-color: #68A2CA;
+}
+
+.hotel-card-favourite-button:active {
+  background-color: #82B3D3;
+}
+
+.hotel-card-favourite-button:disabled {
+  background-color: #E5E5E5;
+}
+
 .hotel-card-green-favourite-button {
   background-color: #7DB54F;
   padding: 8px 10px;
+}
+
+.hotel-card-green-favourite-button:hover {
+  background-color: #6C9E42;
+}
+
+.hotel-card-favourite-button:active {
+  background-color: #7DB54F;
+}
+
+.hotel-card-green-favourite-button:disabled {
+  background-color: #E5E5E5;
 }
 
 .ranking-button {
