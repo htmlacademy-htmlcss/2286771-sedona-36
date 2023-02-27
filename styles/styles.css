@@ -417,11 +417,12 @@ body {
 
 .stars {
   background-image: url("../images/icons/star-1.svg");
-  width: 140px;
+  width: 18px;
   height: 17px;
   background-repeat: space;
   background-position: left;
   margin: 0;
+  padding: 6px;
 }
 
 .star-4 {
