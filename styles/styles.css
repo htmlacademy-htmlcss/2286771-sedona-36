@@ -119,19 +119,26 @@ body {
   margin: auto;
 }
 
-.navigation-link.like::after {
+.like-figure {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  width: 11px;
+  height: 10px;
+  top: 16px;
+  left: 24px;
   position: absolute;
-  content: "12";
+ }
+
+ .like-figure::after {
+ position: absolute;
+  content: "";
   width: 20px;
   height: 20px;
   left: 20px;
   top: 11px;
   background: #7DB54F;
   border-radius: 10px;
-  font-size: 10px;
-  line-height: 10px;
-  color: #FFFFFF;
-  text-align: center;
 }
 
 .navigation-link.button {
@@ -422,6 +429,7 @@ body {
 .select-control:hover {
   border-color: #68A2CA;
 }
+
 .select-control:focus {
   border-color: #3F5E72;
 }
@@ -718,6 +726,7 @@ body {
   text-transform: uppercase;
   margin: 0 auto;
 }
+
 .telephone:hover {
   color: #756157;
 }
@@ -729,6 +738,7 @@ telephone:active {
 .htmlacademy-link:hover {
   color: #756157;
 }
+
 .footer-social {
   display: flex;
   justify-content: space-between;
