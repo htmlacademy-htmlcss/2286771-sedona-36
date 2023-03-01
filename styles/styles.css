@@ -108,7 +108,6 @@ body {
   min-width: 20px;
   min-height: 20px;
   position: relative;
-
 }
 
 .navigation-icon {
@@ -118,6 +117,21 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
+}
+
+.navigation-link.like::after {
+  position: absolute;
+  content: "12";
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  top: 11px;
+  background: #7DB54F;
+  border-radius: 10px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 .navigation-link.button {
@@ -200,6 +214,7 @@ body {
   display: flex;
   min-height: 385px;
   width: 1200px;
+  position: relative;
 }
 
 .advantages-item-white-container {
@@ -219,13 +234,23 @@ body {
   margin: 0 15px 62px;
 }
 
-.advantages-item:after {
+.advantages-item::after {
   position: absolute;
   content: "";
   width: 60px;
   height: 2px;
   background: rgba(0, 0, 0, 0.3);
   top: 199px;
+  left: 170px;
+}
+
+.advantages-item-white::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  top: 188px;
   left: 170px;
 }
 
@@ -236,6 +261,7 @@ body {
 .advantages-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.2);
 }
+
 .advantages-description {
   margin: 0;
 }
@@ -384,6 +410,20 @@ body {
   padding-left: 20px;
   padding-bottom: 14px;
   border: 2px solid #E5E5E5;
+  appearance: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  padding-right: 40px;
+  background-image: url("../images/icons/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.select-control:hover {
+  border-color: #68A2CA;
+}
+.select-control:focus {
+  border-color: #3F5E72;
 }
 
 .button-show-list {
@@ -423,29 +463,25 @@ body {
 
 .stars {
   background-image: url("../images/icons/star-1.svg");
-  width: 18px;
   height: 17px;
   background-repeat: space;
-  background-position: left;
   margin: 0;
-  padding-right: 6px;
-  padding-top: 10px;
 }
 
 .star-4 {
-  width: 4em;
+  width: 78px;
 }
 
 .star-3 {
-  width: 3em;
+  width: 60px;
 }
 
 .star-2 {
-  width: 2em;
+  width: 42px;
 }
 
 .star-5 {
-  width: 5em;
+  width: 96px;
 }
 
 .hotel-card-list {
@@ -682,7 +718,17 @@ body {
   text-transform: uppercase;
   margin: 0 auto;
 }
+.telephone:hover {
+  color: #756157;
+}
 
+telephone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.htmlacademy-link:hover {
+  color: #756157;
+}
 .footer-social {
   display: flex;
   justify-content: space-between;
