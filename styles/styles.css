@@ -119,26 +119,21 @@ body {
   margin: auto;
 }
 
-.like-figure {
+.counter {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
   width: 11px;
   height: 10px;
-  top: 16px;
-  left: 24px;
-  position: absolute;
- }
-
- .like-figure::after {
- position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  left: 20px;
   top: 11px;
-  background: #7DB54F;
-  border-radius: 10px;
+  right: 8px;
+  position: absolute;
+  background-color: #6C9E42;
+  color: #FFFFFF;
+  font-weight: 400;
+  border-radius: 50%;
+  display: block;
+  padding: 5px 4px;
 }
 
 .navigation-link.button {
