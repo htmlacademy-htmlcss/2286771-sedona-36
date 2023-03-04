@@ -190,6 +190,8 @@ body {
   margin: 0 auto 64px;
 }
 
+
+
 /*Advantages*/
 .advantages-list {
   text-align: center;
@@ -366,6 +368,25 @@ body {
 .breadcrumbs-link {
   color: #FFFFFF;
   padding-right: 10px;
+  padding-left: 11px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  width: 8px;
+  height: 11px;
+  margin-left: 10px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  content: url("../images/icons/breadcrumbs-arrow.svg");;
+}
+
+.breadcrumbs-home-link {
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/icons/breadcrumbs-home.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .filter-list {
@@ -465,7 +486,7 @@ body {
 }
 
 .button-show-link:hover {
-border-color: #000000;
+  border-color: #000000;
 }
 
 .button-show-link:focus {
@@ -578,11 +599,12 @@ border-color: #000000;
 }
 
 .pagination-link.pagination-current:hover {
-background: #F2F2F2;
-color: #000000;
+  background: #F2F2F2;
+  color: #000000;
 }
+
 .pagination-link.pagination-current:focus {
-  background:#F2F2F2;
+  background: #F2F2F2;
   color: #000000;
 }
 
@@ -602,7 +624,7 @@ color: #000000;
 }
 
 .pagination-link:focus {
-  color:#FFFFFF;
+  color: #FFFFFF;
   background: #68A2CA;
 }
 
@@ -611,6 +633,7 @@ color: #000000;
   background: #82B3D3;
 
 }
+
 /*Buttons*/
 
 .button {
@@ -795,6 +818,7 @@ color: #000000;
 .footer-social-link:focus {
   color: #68A2CA;
 }
+
 .footer-social-link:active {
   color: rgba(104, 162, 202, 0.3);
 }
@@ -814,7 +838,7 @@ color: #000000;
 }
 
 .telephone:focus {
-  color:#756157;
+  color: #756157;
 }
 
 .telephone:active {
@@ -828,15 +852,17 @@ color: #000000;
   padding-bottom: 9px;
   color: #000000;
 }
+
 .htmlacademy-link:hover {
   color: #756157;
 }
+
 .htmlacademy-link:focus {
   color: #756157;
 }
 
 .htmlacademy-link:active {
-  color:rgba(117, 97, 87, 0.3);
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .e-mail {
