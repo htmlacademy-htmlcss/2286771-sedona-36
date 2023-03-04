@@ -110,6 +110,20 @@ body {
   position: relative;
 }
 
+.navigation-link-current {
+position: relative;
+}
+
+.navigation-link-current::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
+}
+
 .navigation-icon {
   position: absolute;
   top: 0;
@@ -391,6 +405,7 @@ body {
 
 .filter-list {
   list-style-type: none;
+  display: flex;
 }
 
 .filter-form {
