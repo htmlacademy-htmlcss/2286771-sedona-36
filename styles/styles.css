@@ -126,7 +126,7 @@ body {
   width: 11px;
   height: 10px;
   top: 11px;
-  right: 8px;
+  right: 8юpx;
   position: absolute;
   background-color: #6C9E42;
   color: #FFFFFF;
@@ -712,27 +712,6 @@ body {
 
 /*Footer*/
 
-.telephone {
-  font-size: 40px;
-  line-height: 40px;
-  color: #000000;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 auto;
-}
-
-.telephone:hover {
-  color: #756157;
-}
-
-telephone:active {
-  color: rgba(117, 97, 87, 0.3);
-}
-
-.htmlacademy-link:hover {
-  color: #756157;
-}
 
 .footer-social {
   display: flex;
@@ -763,18 +742,40 @@ telephone:active {
   background-size: 24px 14px;
   display: block;
   padding: 13px 12px;
+  color: #83B3D3;
 }
 
-.footer-social-vk {
-  background-image: url("../images/icons/social-vk.svg");
+.footer-social-link:hover {
+  color: #68A2CA;
 }
 
-.footer-social-tlgrm {
-  background-image: url("../images/icons/social-telegram.svg");
+.footer-social-link:focus {
+  color: #68A2CA;
+}
+.footer-social-link:active {
+  color: rgba(104, 162, 202, 0.3);
 }
 
-.footer-social-youtube {
-  background-image: url("../images/icons/social-youtube.svg");
+.telephone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.telephone:hover {
+  color: #756157;
+}
+
+.telephone:focus {
+  color:#756157;
+}
+
+.telephone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .htmlacademy-link {
@@ -782,6 +783,17 @@ telephone:active {
   height: 33px;
   padding-top: 9px;
   padding-bottom: 9px;
+  color: #000000;
+}
+.htmlacademy-link:hover {
+  color: #756157;
+}
+.htmlacademy-link:focus {
+  color: #756157;
+}
+
+.htmlacademy-link:active {
+  color:rgba(117, 97, 87, 0.3);
 }
 
 .e-mail {
