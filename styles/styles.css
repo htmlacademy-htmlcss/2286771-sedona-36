@@ -464,6 +464,18 @@ body {
   margin: auto;
 }
 
+.button-show-link:hover {
+border-color: #000000;
+}
+
+.button-show-link:focus {
+  border-color: #68A2CA;
+}
+
+.button-show-link:active {
+  border-color: #000000;
+}
+
 .stars {
   background-image: url("../images/icons/star-1.svg");
   height: 17px;
@@ -557,9 +569,24 @@ body {
   background: #82B3D3;
   border-radius: 4px;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .pagination-link.pagination-current {
+  background: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-link.pagination-current:hover {
+background: #F2F2F2;
+color: #000000;
+}
+.pagination-link.pagination-current:focus {
+  background:#F2F2F2;
+  color: #000000;
+}
+
+.pagination-link.pagination-current:active {
   background: #F2F2F2;
   color: #000000;
 }
@@ -569,6 +596,21 @@ body {
   background: #FFFFFF;
 }
 
+.pagination-link:hover {
+  color: #FFFFFF;
+  background: #82B3D3;
+}
+
+.pagination-link:focus {
+  color:#FFFFFF;
+  background: #68A2CA;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #82B3D3;
+
+}
 /*Buttons*/
 
 .button {
@@ -666,6 +708,7 @@ body {
   padding: 8px 50px;
   min-width: 232px;
 }
+
 
 /*Subscription*/
 .footer-subscription {
