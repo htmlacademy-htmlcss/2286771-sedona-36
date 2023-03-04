@@ -111,7 +111,7 @@ body {
 }
 
 .navigation-link-current {
-position: relative;
+  position: relative;
 }
 
 .navigation-link-current::after {
@@ -140,7 +140,7 @@ position: relative;
   width: 11px;
   height: 10px;
   top: 11px;
-  right: 8юpx;
+  right: 8px;
   position: absolute;
   background-color: #6C9E42;
   color: #FFFFFF;
@@ -160,6 +160,18 @@ position: relative;
   padding: 8px 34px;
   margin-top: 14px;
   margin-left: 20px;
+}
+
+.navigation-link.button:hover {
+  background-color: #615048;
+}
+
+.navigation-link.button:focus {
+  background-color: #615048;
+}
+
+.navigation-link.button:active {
+  background-color: #756157;
 }
 
 .hero {
@@ -392,7 +404,8 @@ position: relative;
 
   background-position: center;
   background-repeat: no-repeat;
-  content: url("../images/icons/breadcrumbs-arrow.svg");;
+  content: url("../images/icons/breadcrumbs-arrow.svg");
+  ;
 }
 
 .breadcrumbs-home-link {
