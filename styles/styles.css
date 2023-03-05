@@ -474,11 +474,54 @@ body {
   border: 0;
 }
 
-.filter-group.range {
+.filter-group.price {
   width: 288px;
   margin-left: 93px;
+  padding: 0;
 }
 
+/*Range*/
+.range {
+  position: relative;
+  height: 4px;
+  margin-top: 48px;
+  border: 4px;
+  background-color: grey;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #FFFFFF;
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  border: 4px solid #FFFFFF;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -15px;
+}
 .control {
   font-size: 18px;
   line-height: 23px;
