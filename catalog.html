@@ -77,7 +77,6 @@
             </ul>
           </header>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="filter-group-wrapper">
             <fieldset class="filter-group">
               <legend class="filter-group-title">Инфраструктура</legend>
               <ul class="filter-list">
@@ -124,24 +123,21 @@
                 </li>
               </ul>
             </fieldset>
-          </div>
-            <fieldset class="filter-range">
-              <div class="range">
-              <legend class="filter-range-title">
+            <fieldset class="filter-group range">
+              <legend class="filter-group-title">
                 Стоимость,Р</legend>
-                <label class="range-from-fieled">
-                  <input class="range-from-fieled-input" type="number" value="0">
-                  <span>от</span>
-                </label>
-                <label class="filter-to-field">
-                  <input class="range-to-field" type="number" value="9000">
-                  <span>до</span>
-                </label>
-                </div>
-                </fieldset>
+              <label class="range-from-fieled">
+                <input class="range-from-fieled-input" type="number" value="0">
+                <span>от</span>
+              </label>
+              <label class="filter-to-field">
+                <input class="range-to-field" type="number" value="9000">
+                <span>до</span>
+              </label>
+            </fieldset>
             <div class="filter-button-group">
-            <button class="filter-button button" type="submit">Применить</button>
-            <button class="filter-button button" type="reset">Сбросить</button>
+              <button class="filter-button-submit button" type="submit">Применить</button>
+              <button class="filter-button-reset button" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
