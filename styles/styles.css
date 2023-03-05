@@ -175,12 +175,13 @@ body {
 }
 
 .hero {
-  background-image: url("../images/background-index.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 485px;
+  background-image:  url("../images/icons/divider.svg"), url("../images/background-index.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 57px, cover;
   background-color: #82B3D3;
   color: #000000;
-  min-height: 485px;
+  min-height: 57px, 485px;
+  background-position: bottom, top;
 }
 
 .hero-logo {
@@ -215,8 +216,6 @@ body {
 .intro-text.second {
   margin: 0 auto 64px;
 }
-
-
 
 /*Advantages*/
 .advantages-list {
