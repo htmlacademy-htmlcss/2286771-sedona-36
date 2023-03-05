@@ -400,11 +400,9 @@ body {
   width: 8px;
   height: 11px;
   margin-left: 10px;
-
   background-position: center;
   background-repeat: no-repeat;
   content: url("../images/icons/breadcrumbs-arrow.svg");
-  ;
 }
 
 .breadcrumbs-home-link {
@@ -417,17 +415,38 @@ body {
 
 .filter-list {
   list-style-type: none;
-  display: flex;
 }
 
 .filter-form {
   padding-left: 70px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .filter-group-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.filter-group-wrapper {
+  display: flex;
+}
+
+.filter-group:not(:last-child) {
+  margin-right: 70px;
+}
+
+.filter-price-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 549px;
+}
+
+.filter-button-group {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
 }
 
 .result-container {
