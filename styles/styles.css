@@ -518,11 +518,14 @@ body {
 
 .toggle-max {
   top: -8px;
-  right: -15px;
+  right: -15px
 }
 
 .input-price {
   display: flex;
+}
+
+.input-price label {
   position: relative;
 }
 
@@ -538,7 +541,7 @@ body {
   border: none;
 }
 
-.range-from-field span {
+.input-price span {
   position: absolute;
   content: "от";
   top: 50%;
@@ -565,8 +568,15 @@ body {
 .range-from-field {
   margin-right: 2px;
   background: #F2F2F2;
-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .control {
   font-size: 18px;
   line-height: 23px;
