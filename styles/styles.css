@@ -827,6 +827,7 @@ input::-webkit-inner-spin-button {
   text-align: right;
 }
 
+/*Pagination*/
 .pagination {
   list-style-type: none;
   display: flex;
@@ -1128,4 +1129,122 @@ input::-webkit-inner-spin-button {
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
   border: 0;
+}
+
+/*Modal window*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px;
+  background-color: #ffffff;
+}
+
+
+.model-content {
+  margin: 64px 70px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 137px 110px 88px 131px 111px;
+  grid-template-rows: 48px 48px 48px 48px;
+  row-gap: 48px;
+
+}
+
+.field-group-check-in {
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+
+.field-group-check-out {
+  grid-column: 1/6;
+  grid-row: 2/3;
+}
+
+.field-group-adults {
+  grid-column: 1/6;
+  grid-row: 3/4;
+}
+
+.field-group-children {
+  grid-column: 4/6;
+  grid-row: 3/4;
+}
+
+.search-form-find {
+  grid-column: 1/6;
+  grid-row: 4/5;
+}
+
+.search-check-in,
+.search-check-out {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  background-color: #F2F2F2;
+  color: #000000;
+  border: none;
+  width: 440px;
+}
+
+.search-adults,
+.search-children {
+  width: 110px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.adults,
+.children {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
