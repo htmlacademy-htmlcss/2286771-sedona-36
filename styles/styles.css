@@ -470,12 +470,13 @@ body {
 .filter-group {
   margin-right: 70px;
   border: 0;
+  padding: 0;
 }
 
 .filter-group .price {
   width: 288px;
   margin-left: 93px;
-  padding: 0;
+
 }
 
 /*Range*/
@@ -553,7 +554,7 @@ body {
   line-height: 24px;
 }
 
-.range-to-field span {
+.input-price span {
   position: absolute;
   content: "до";
   top: 50%;
@@ -580,6 +581,51 @@ input::-webkit-inner-spin-button {
 .control {
   font-size: 18px;
   line-height: 23px;
+  position: relative;
+  display: block;
+  padding-left: 0;
+  margin-left: 10;
+  padding-bottom: 16px;
+
+}
+
+/*Mark*/
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 19px;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control:hover .control-label {
+  background: #3F5E72;
+  opacity: 0.6;
+}
+
+.control:focus .control-label {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.control:active .control-label {
+  background: #3F5E72;
+  opacity: 0.3;
+}
+
+.control-label {
+  line-height: 23px;
+  padding-left: 35px;
+}
+
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/icons/arrow-up.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 4px;
 }
 
 .result-container {
