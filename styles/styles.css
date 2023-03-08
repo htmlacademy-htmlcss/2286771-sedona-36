@@ -438,6 +438,9 @@ body {
   min-width: 150px;
 }
 
+.filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
 .filter-group-title {
   font-weight: 700;
   font-size: 20px;
@@ -585,8 +588,6 @@ input::-webkit-inner-spin-button {
   display: block;
   padding-left: 0;
   margin-left: 10;
-  padding-bottom: 16px;
-
 }
 
 /*Mark*/
@@ -626,6 +627,23 @@ input::-webkit-inner-spin-button {
   background-image: url("../images/icons/arrow-up.svg");
   background-repeat: no-repeat;
   background-position: 5px 4px;
+}
+
+/*Radio*/
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
 }
 
 .result-container {
