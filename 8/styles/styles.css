@@ -298,11 +298,13 @@ body {
   height: 2px;
   left: 970px;
 }
-.advantages-item:nth-child(even) {
+
+.advantages-item.small-area,
+.advantages-item.tourists {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:nth-child(odd) {
+.advantages-item.road {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -333,25 +335,21 @@ body {
   width: 230px;
   min-height: 223px;
   padding: 81px 85px;
-}
-
-.tips-item:nth-child(1) {
-  background-image: url("../images/icons/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 163px 81px;
+}
+
+.accomodation {
+  background-image: url("../images/icons/icon-home.svg");
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.tips-item:nth-child(2) {
+.food {
   background-image: url("../images/icons/icon-food.svg");
-  background-repeat: no-repeat;
-  background-position: 163px 81px;
 }
 
-.tips-item:nth-child(3) {
+.souvenirs {
   background-image: url("../images/icons/icon-souvenir.svg");
-  background-repeat: no-repeat;
-  background-position: 163px 81px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -440,6 +438,10 @@ body {
   min-width: 150px;
 }
 
+.filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
 .filter-group-title {
   font-weight: 700;
   font-size: 20px;
@@ -472,12 +474,12 @@ body {
 .filter-group {
   margin-right: 70px;
   border: 0;
+  padding: 0;
 }
 
 .filter-group.price {
   width: 288px;
   margin-left: 93px;
-  padding: 0;
 }
 
 /*Range*/
@@ -520,11 +522,143 @@ body {
 
 .toggle-max {
   top: -8px;
-  right: -15px;
+  right: -15px
 }
+
+.input-price {
+  display: flex;
+}
+
+.input-price label {
+  position: relative;
+}
+
+.input-price input:focus {
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
+.input-price input:active {
+  background: #E6E6E6;
+  border: 3px solid #000000;
+}
+
+.input-price input {
+  width: 143px;
+  height: 48px;
+  padding: 12px 20px;
+  padding-right: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #F2F2F2;
+}
+
+.input-price span {
+  position: absolute;
+  content: "от";
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.input-price span {
+  position: absolute;
+  content: "до";
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.range-from-field {
+  margin-right: 2px;
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .control {
   font-size: 18px;
   line-height: 23px;
+  position: relative;
+  display: block;
+  padding-left: 0;
+  margin-left: 10;
+}
+
+/*Mark*/
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 19px;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control:hover .control-label {
+  background: #3F5E72;
+  opacity: 0.6;
+}
+
+.control:focus .control-label {
+  border: 3px solid #83B3D3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.control:active .control-label {
+  background: #3F5E72;
+  opacity: 0.3;
+}
+
+.control-label {
+  line-height: 23px;
+  padding-left: 35px;
+}
+
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/icons/arrow-up.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 4px;
+}
+
+/*Radio*/
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
 }
 
 .result-container {
@@ -549,6 +683,8 @@ body {
   display: block;
   padding-right: 192px;
 }
+
+/*Select*/
 
 .select-control {
   margin: 0;
@@ -691,6 +827,7 @@ body {
   text-align: right;
 }
 
+/*Pagination*/
 .pagination {
   list-style-type: none;
   display: flex;
@@ -992,4 +1129,122 @@ body {
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
   border: 0;
+}
+
+/*Modal window*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px;
+  background-color: #ffffff;
+}
+
+
+.model-content {
+  margin: 64px 70px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: 137px 110px 88px 131px 111px;
+  grid-template-rows: 48px 48px 48px 48px;
+  row-gap: 48px;
+
+}
+
+.field-group-check-in {
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+
+.field-group-check-out {
+  grid-column: 1/6;
+  grid-row: 2/3;
+}
+
+.field-group-adults {
+  grid-column: 1/6;
+  grid-row: 3/4;
+}
+
+.field-group-children {
+  grid-column: 4/6;
+  grid-row: 3/4;
+}
+
+.search-form-find {
+  grid-column: 1/6;
+  grid-row: 4/5;
+}
+
+.search-check-in,
+.search-check-out {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  background-color: #F2F2F2;
+  color: #000000;
+  border: none;
+  width: 440px;
+}
+
+.search-adults,
+.search-children {
+  width: 110px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.adults,
+.children {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }

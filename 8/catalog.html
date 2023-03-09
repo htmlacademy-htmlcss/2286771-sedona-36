@@ -69,8 +69,8 @@
             <h2 class="inner-header-title">Гостиницы Седоны</h2>
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-home-link" href="index.html"></a>
-                <span class="visually-hidden">Главная.</span>
+                <a class="breadcrumbs-link breadcrumbs-home-link" href="index.html"><span
+                    class="visually-hidden">Главная.</span></a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -83,20 +83,24 @@
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="Swimming-pool" checked>
-                    Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="Swimming-pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="Parking lot" checked>
-                    Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="Parking lot" checked>
+
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="Wi-Fi">
-                    Wi-Fi
+                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -106,20 +110,23 @@
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="Hotel" checked>
-                    Гостиница
+                    <input class="visually-hidden control-input" type="radio" name="Hotel" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="Motel">
-                    Мотель
+                    <input class="visually-hidden control-input" type="radio" name="Motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="Apartments">
-                    Апартаменты
+                    <input class="visually-hidden control-input" type="radio" name="Apartments">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -128,14 +135,17 @@
               <legend class="filter-group-title">
                 Стоимость, ₽:</legend>
 
-              <label class="range-from-fieled">
-                <input class="range-from-fieled-input" type="number" value="0">
-                <span>от</span>
-              </label>
-              <label class="filter-to-field">
-                <input class="range-to-field" type="number" value="9000">
-                <span>до</span>
-              </label>
+              <div class="input-price">
+                <label class="range-from-field">
+                  <input class="range-from-field-input" type="number" value="0">
+                  <span class="from">от</span>
+                </label>
+
+                <label class="range-to-field">
+                  <input class="range-to-field-input" type="number" value="9000">
+                  <span>до</span>
+                </label>
+              </div>
 
               <div class="range">
                 <div class="range-scale">
@@ -148,6 +158,7 @@
                     </button>
                   </div>
                 </div>
+              </div>
             </fieldset>
             <div class="filter-button-group">
               <button class="filter-button-submit button" type="submit">Применить</button>
@@ -174,11 +185,12 @@
                       <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="c">
                         <path fill="#fff" d="M0 0h16v14H0z" />
                       </clipPath>
                     </defs>
-                  </svg><span class="visually-hidden">
+                  </svg>
+                  <span class="visually-hidden">
                     Показать карточки.
                   </span></a>
               </li>
@@ -190,7 +202,7 @@
                       <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="b">
                         <path fill="#fff" d="M0 0h16v14H0z" />
                       </clipPath>
                     </defs>
@@ -304,7 +316,7 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link" href="https://vk.com/htmlacademy">
-                <svg class="footer-social-vk" aria-hidden="true" focusable="false" xmlns=" http://www.w3.org/2000/svg"
+                <svg class="footer-social-vk" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="25" height="15" fill="currentColor" viewBox="0 0 25 15">
                   <path fill="currentColor" fill-rule="evenodd"
                     d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z"
