@@ -1129,7 +1129,7 @@ body {
 
 
 .model-content {
-  margin: 64px 70px;
+  padding: 64px 70px;
 }
 
 .modal-close-button {
@@ -1203,6 +1203,25 @@ body {
   color: #000000;
   border: none;
   width: 440px;
+}
+
+.check-in {
+  width: 137px;
+}
+.field-group-check-in {
+  position: relative;
+
+}
+
+.field-group-check-in::after {
+position: absolute;
+background-image: url("../images/icons/calendar.svg");
+background-repeat: no-repeat;
+top: 16px;
+right: 17px;
+width: 16px;
+height: 15px;
+content: "";
 }
 
 .search-adults,
