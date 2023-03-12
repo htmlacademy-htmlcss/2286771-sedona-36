@@ -1163,17 +1163,18 @@ body {
   grid-template-columns: 137px 110px 88px 131px 111px;
   grid-template-rows: 48px 48px 48px 48px;
   row-gap: 48px;
-
 }
 
 .field-group-check-in {
   grid-column: 1/6;
   grid-row: 1/2;
+  position: relative;
 }
 
 .field-group-check-out {
   grid-column: 1/6;
   grid-row: 2/3;
+  position: relative;
 }
 
 .field-group-adults {
@@ -1191,6 +1192,7 @@ body {
   grid-row: 4/5;
 }
 
+
 .search-check-in,
 .search-check-out {
   font-weight: 700;
@@ -1203,25 +1205,21 @@ body {
   color: #000000;
   border: none;
   width: 440px;
+  padding-right: 12px;
 }
 
-.check-in {
-  width: 137px;
-}
-.field-group-check-in {
-  position: relative;
 
-}
-
-.field-group-check-in::after {
-position: absolute;
-background-image: url("../images/icons/calendar.svg");
-background-repeat: no-repeat;
-top: 16px;
-right: 17px;
-width: 16px;
-height: 15px;
-content: "";
+.field-group-check-in::before,
+.field-group-check-out::before {
+  position: absolute;
+  background-image: url("../images/icons/calendar.svg");
+  background-repeat: no-repeat;
+  top: 16px;
+  right: 17px;
+  width: 16px;
+  height: 15px;
+  content: "";
+  opacity: 0.3;
 }
 
 .search-adults,
@@ -1243,4 +1241,25 @@ content: "";
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+
+.search-form-find {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #83B3D3;
+  border-radius: 10px;
+  border: 0;
+}
+
+.comment-two {
+  display: block;
+  text-align: center;
+}
+
+.comment-one {
+  display: block;
+  text-align: center;
+  color: #FF5757;
 }
