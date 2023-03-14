@@ -1268,6 +1268,7 @@ body {
   height: 20px;
 }
 
+
 .modal-search-button-minus,
 .modal-search-button-plus {
   padding: 14px 10px;
@@ -1315,4 +1316,32 @@ body {
 
 .modal-container-close {
   display: none;
+}
+
+.children-container::before {
+  background-color: #333333;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 216px;
+  position: absolute;
+  top: 154px;
+  right: 43px;
+  content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
+}
+
+.children-container::after {
+  background-image: url("../images/icons/triangle.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  content: " ";
+  top: 145px;
+  right: 167px;
+  width: 19px;
+  height: 9px;
 }
