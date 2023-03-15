@@ -1127,7 +1127,6 @@ body {
   background-color: #ffffff;
 }
 
-
 .model-content {
   padding: 64px 70px;
 }
@@ -1177,40 +1176,31 @@ body {
   border: none;
   box-sizing: border-box;
   padding-left: 20px;
+  width: 330px;
   flex-grow: 1;
-
 }
 
-.check-in-input-container {
+.check-in-container,
+.check-out-container {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 23px;
+  position: relative;
 }
 
-.check-out-input-container {
-  display: flex;
-}
-
-.check-out-date.date,
-.check-in-date.date {
+.field-group-check-in,
+.field-group-check-out,
+.field-group-adults,
+.field-group-children {
+  width: 137px;
   text-transform: capitalize;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
-}
-
-.check-in-date {
-  padding-right: 24px;
-}
-
-.check-out-date {
   padding-right: 18px;
-}
-
-.check-in-container,
-.check-out-container {
-  padding-bottom: 23px;
-  position: relative;
 }
 
 .check-in-container::before,
@@ -1232,6 +1222,31 @@ body {
   box-sizing: border-box;
 }
 
+.children-container {
+  width: 242px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  padding-left: 13px;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 26px;
+  height: 26px;
+  background-color: #83B3D3;
+  display: block;
+  border-radius: 50%;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  background-color: #68A2CA;
+}
+
 .adults-children-container {
   display: flex;
   padding-bottom: 48px;
@@ -1248,29 +1263,9 @@ body {
   position: relative;
 }
 
-.search-children {
-  width: 131px;
-}
-
-.search-adults {
-  width: 137px;
-}
-
-.search-children::before {
-  content: " ";
-  position: absolute;
-  background-color: #83B3D3;
-  border-radius: 50%;
-  top: 11px;
-  left: 59px;
-  background-image: url("../images/icons/info.svg");
-  width: 20px;
-  height: 20px;
-}
-
-
 .modal-search-button-minus,
-.modal-search-button-plus {
+.modal-search-button-plus,
+.modal-search-number {
   padding: 14px 10px;
   border: none;
 }
@@ -1303,6 +1298,10 @@ body {
   min-width: 577px;
 }
 
+.search-form-find:hover {
+  background-color: #68A2CA;
+}
+
 .comment-two {
   display: block;
   text-align: center;
@@ -1314,11 +1313,11 @@ body {
   color: #FF5757;
 }
 
-.modal-container-close {
-  display: none;
+.tooltip {
+  position: absolute;
 }
 
-.children-container::before {
+.tooltip-text {
   background-color: #333333;
   color: #ffffff;
   font-weight: 400;
@@ -1329,23 +1328,21 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   width: 216px;
-  position: absolute;
-  top: 154px;
-  right: 43px;
-  content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
+  display: block;
+  position: relative;
+  top: 7px;
+  left: 20px;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
-.children-container::after {
+.tooltip-text::after {
   background-image: url("../images/icons/triangle.svg");
   background-repeat: no-repeat;
   position: absolute;
   content: " ";
-  top: 145px;
-  right: 167px;
+  top: -6px;
+  right: 113px;
   width: 19px;
   height: 9px;
-}
-
-.modal-container-close {
-  display: none;
 }
