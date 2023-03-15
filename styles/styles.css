@@ -1346,3 +1346,7 @@ body {
   width: 19px;
   height: 9px;
 }
+
+.modal-container-close {
+  display: none;
+}
